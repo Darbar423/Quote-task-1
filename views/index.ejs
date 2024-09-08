@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Quote of the Day</title>
+</head>
+<body>
+    `<div class="container">
+        <header>Quote of the Day</header>
+        <div class="content">
+            <div class="quote-area">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="quote"><%= quote %></p>
+                <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <div class="author">
+                <span>__</span>
+                <span class="name"><%= author %></span>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="freatures">
+                <form action="/submit" method="post">
+                    <input type="submit" value="New Quote">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/c474885e45.js" crossorigin="anonymous"></script>
+</body>
+</html>
